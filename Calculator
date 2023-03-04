@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    char op;
+    int a,b;
+    
+    printf("\tNOTE:\n");
+    printf("\t1.'^' is used for square root.\n");
+    printf("\t2.'~' is used for cube root.\n");
+    
+    printf("\n");
+    printf("\tEnter an operator (+,-,x,/,^,~): ");
+    scanf("%c",&op);
+    printf("\tEnter the values: \n");
+    printf("\ta = ");
+    scanf("%d",&a);
+    printf("\tb = ");
+    scanf("%d",&b);
+    
+    switch(op)
+    {
+    case '+':
+    printf("\t%d + %d = %d",a,b,a+b);
+    break;
+    
+    case '-':
+    printf("\t%d - %d = %d",a,b,a-b);
+    break;
+    
+    case 'x':
+    printf("\t%d x %d = %d",a,b,a*b);
+    break;
+    
+    case '/':
+    printf("\t%d/%d = %d",a,b,a-b);
+    break;
+    
+    case '^':
+    printf("\tThe square root of %d is %f.\n",a,sqrt(a));
+    printf("\tThe square root of %d is %f.\n",b,sqrt(b));
+    break;
+    
+    case '~':
+    printf("\tThe cube root of %d is %f.\n",a,cbrt(a));
+    printf("\tThe cube root of %d is %f.\n",b,cbrt(b));
+    break;
+    }
+    
+    return 0;
+    
+}
